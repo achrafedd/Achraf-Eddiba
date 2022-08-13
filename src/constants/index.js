@@ -9,8 +9,8 @@ export const projects = [
         name: "Elzero Template",
         techs: ["HTML", "CSS", "JavaScript"],
         description: "Elzero template created using html css and javascript",
-        demo: "https://github.com/achrafedd/template-coding",
-        code: "https://achrafedd.github.io/template-coding/",
+        demo: "https://achrafedd.github.io/template-coding/",
+        code: "https://github.com/achrafedd/template-coding",
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ export const projects = [
         name: "My Portfolio",
         techs: ["Reactjs", "CSS"],
         description: "My Portfolio created using Reactjs and css",
-        demo: "https://achraf-eddiba.netlify.app",
+        demo: "https://achrafeddiba.me",
         code: "https://github.com/achrafedd/Achraf-Eddiba",
     },
 ];
