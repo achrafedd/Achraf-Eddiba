@@ -1,0 +1,52 @@
+.app__hero {
+    padding: var(--paddingY) 0;
+}
+
+.app__hero-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.app__hero-content .main-title {
+    color: var(--dark);
+}
+
+.app__hero-content .small-title {
+    color: var(--dark);
+    margin-bottom: 24px;
+}
+
+.app__hero-content .small-title span {
+    color: var(--brand);
+}
+
+.app__hero-content .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__hero-content .box .social-media ul {
+    display: flex;
+    gap: 8px;
+    font-size: 25px;
+}
+
+.app__hero-content .box .social-media ul li {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    .app__hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app__hero-content .main-title {
+        font-size: 35px;
+    }
+
+    .app__hero-content .small-title {
+        font-size: 22px;
+    }
+}

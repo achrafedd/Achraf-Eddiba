@@ -1,0 +1,69 @@
+.app__contact {
+    padding: var(--paddingY) 0;
+}
+
+.app__contact .container {
+    width: 60%;
+}
+
+.app__contact .alt-title {
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+
+.app__contact form input,
+.app__contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--brand);
+    outline: none;
+    resize: none;
+    margin-bottom: 24px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.app__contact form textarea {
+    height: 140px;
+    margin-bottom: 24px;
+}
+
+.send,
+.unsend {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    animation: anime 300ms linear alternate;
+    -webkit-animation: anime 300ms linear alternate;
+}
+
+.send {
+    background-color: #28b463;
+}
+
+.unsend {
+    background-color: #e74c3c;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .app__contact .container {
+        width: 100%;
+    }
+}

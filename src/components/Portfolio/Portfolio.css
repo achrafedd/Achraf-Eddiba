@@ -1,0 +1,21 @@
+.app__portfolio {
+    width: 100%;
+    padding: var(--paddingY) 0;
+}
+
+.app__portfolio .main-title {
+    color: var(--brand);
+    margin-bottom: 32px;
+}
+
+.app__portfolio .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+}
+
+@media (max-width: 767px) {
+    .app__portfolio .main-title {
+        font-size: 35px;
+    }
+}

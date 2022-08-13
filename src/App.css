@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+    --brand: #bf7506;
+    --dark: #211b12;
+    --paddingY: 100px;
+    --transition: 300ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: "Inter", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* // Small devices */
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* // Medium devices */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* // Large devices */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* // Extra large devices */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+}
+
+.alt-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+}
+
+.small-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+}
+
+.main-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.alt-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-bottom-color: var(--brand);
+    color: var(--dark);
+    cursor: pointer;
+    transition: background-color var(--transition) ease-out,
+        color var(--transition) ease-out;
+    -webkit-transition: background-color var(--transition) ease-out,
+        color var(--transition) ease-out;
+    -moz-transition: background-color var(--transition) ease-out,
+        color var(--transition) ease-out;
+    -ms-transition: background-color var(--transition) ease-out,
+        color var(--transition) ease-out;
+    -o-transition: background-color var(--transition) ease-out,
+        color var(--transition) ease-out;
+}
+
+.btn svg {
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+.btn:hover {
+    background-color: var(--brand);
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

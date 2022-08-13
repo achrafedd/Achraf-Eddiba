@@ -1,0 +1,30 @@
+.app__header {
+    width: 100%;
+    height: 60px;
+}
+
+.app__header .container {
+    height: 100%;
+}
+
+.app__header-navigation {
+    height: 100%;
+}
+
+.app__header-navigation ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.app__header-navigation ul a {
+    color: var(--brand);
+}
+
+@media (max-width: 767px) {
+    .app__header-navigation ul {
+        justify-content: center;
+    }
+}

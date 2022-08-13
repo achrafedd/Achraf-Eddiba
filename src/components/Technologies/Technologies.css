@@ -1,0 +1,19 @@
+.app__tech .small-title {
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+
+.app__tech .techs ul {
+    display: flex;
+    gap: 6px;
+}
+
+.app__tech .techs ul li {
+    padding: 5px 8px;
+    border: 1px solid var(--brand);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
