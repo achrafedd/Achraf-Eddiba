@@ -1,4 +1,5 @@
 import React from "react";
+import { tecnologies } from "../../constants";
 import "./Technologies.css";
 
 const Technologies = () => {
@@ -10,10 +11,14 @@ const Technologies = () => {
                 </h2>
                 <div className="techs">
                     <ul>
-                        <li className="main-text">HTML</li>
-                        <li className="main-text">css</li>
-                        <li className="main-text">JavaScript</li>
-                        <li className="main-text">Reactjs</li>
+                        {tecnologies.map((tech) => (
+                            <li key={tech.id} className="main-text">
+                                <div className="image">
+                                    <img src={tech.image} alt={tech.name} />
+                                </div>
+                                <span className="alt-text">{tech.name}</span>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

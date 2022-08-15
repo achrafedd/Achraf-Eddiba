@@ -9,11 +9,25 @@
 }
 
 .app__tech .techs ul li {
-    padding: 5px 8px;
-    border: 1px solid var(--brand);
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+}
+
+.app__tech .techs ul li .image {
+    width: 100px;
+    height: 100px;
+}
+
+.app__tech .techs ul li img {
+    width: 100%;
+}
+
+.app__tech .techs ul li span {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: var(--dark);
 }
