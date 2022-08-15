@@ -5,6 +5,7 @@
 
 .app__tech .techs ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
 }
 
